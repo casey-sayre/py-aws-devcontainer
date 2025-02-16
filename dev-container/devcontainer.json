@@ -1,21 +1,19 @@
 {
   "name": "My Dev Container",
-  "image": "my-custom-image:latest", // Or a specific tag
-  // "mounts": [
-  //   "source=${localWorkspaceFolder},target=/workspaces/codespaces,type=bind"
-  // ],
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "/bin/bash",
-        "editor.formatOnSave": true, // Example: Enable format on save
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true
       },
       "extensions": [
         "ms-python.python",
-        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-containers"
       ]
     }
-  },
-  "postCreateCommand": "echo 'Dev container ready!'", // Run after container creation
-  // Other devcontainer options...
+  }
 }
