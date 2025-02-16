@@ -2,4 +2,4 @@
 
 ## Build the image locally
 
- docker build -t cs2025/py-aws-base:latest .
+ docker build -t my-user/py-aws-base:latest .
