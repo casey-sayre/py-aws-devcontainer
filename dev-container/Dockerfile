@@ -23,7 +23,5 @@ RUN echo "vscode ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 # Switch to the vscode user
 USER vscode
 
-# FIX THIS Set the initial WORKDIR
-WORKDIR /workspaces/test-proj
-# Install AWS CDK CLI (as the vscode user) - Install locally
-RUN npm install aws-cdk
+# Install AWS CDK CLI globally
+RUN sudo npm install -g aws-cdk
