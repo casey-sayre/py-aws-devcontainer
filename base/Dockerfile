@@ -1,10 +1,11 @@
 FROM python:3.13-slim-bullseye
 
-# Install system dependencies for Poetry and AWS CLI
+# Install some dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     gnupg \
     unzip \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Poetry

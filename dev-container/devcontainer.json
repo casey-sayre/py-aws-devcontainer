@@ -15,5 +15,8 @@
         "ms-vscode-remote.remote-containers"
       ]
     }
-  }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind"
+  ]
 }
