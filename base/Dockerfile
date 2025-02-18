@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gnupg \
     unzip \
     git \
+    less \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Poetry
