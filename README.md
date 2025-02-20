@@ -8,6 +8,7 @@ This repository provides a "base" directory with a `Dockerfile`.  The intention 
 ## Devcontainer
 This repository provides a "dot-devcontainer" directory with `Dockerfile` and `devcontainer.json` files.  These files can be copied into the toplevel `.devcontainer` directory of a project.
 These files add `AWS CLI` and `CDK` to the Python-Poetry base container for a full development environment.
+`devcontainer.json` includes useful vscode extensions that are installed in the container.
 
 ## Vscode
 This repository provides a "dot-vscode" directory with a `settings.json` file. This provides project-level settings values for a uniform editing experience across projects. Among other things, it sets `black-formatter`, `max-line-length 120`.  This file can be copied into the toplevel `.vscode` directory of a project.
