@@ -12,7 +12,10 @@
       },
       "extensions": [
         "ms-python.python",
-        "ms-vscode-remote.remote-containers"
+        "ms-python.debugpy",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.vscode-pylance"
       ]
     }
   },
